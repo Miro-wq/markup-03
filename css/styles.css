@@ -6,10 +6,24 @@
   --button-color-filters: #404bbf;
   --accent-color-filters: #e7e9fc;
   --accent-color-cloud: #f4f4fd;
+  --green-new-color: #31d0aa;
+  --grey-new-color: #8e8f99;
+  --white-new-color: #fcfcfc;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+  font-family: var(--font-family);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--primary-color);
   font-style: normal;
   letter-spacing: 0.02em;
@@ -27,6 +41,7 @@ header {
   height: 64px;
   text-align: left;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 header a {
@@ -36,7 +51,7 @@ header a {
 header .web,
 header .studio {
   text-transform: uppercase;
-  font-family: "Raleway";
+  font-family: var(--second-family);
   font-weight: 800;
   letter-spacing: 0.03em;
 }
@@ -46,9 +61,8 @@ header .studio {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -88,23 +102,17 @@ header .studio {
   margin-right: 156px;
 }
 
-.index {
-  width: 48px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
+.main-nav a:hover {
+  color: var(--button-color-filters);
 }
 
-.portfolio {
-  width: 66px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
-}
-
+.index,
+.portfolio,
 .contacts {
-  width: 67px;
-  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
 }
@@ -115,7 +123,7 @@ header .studio {
   letter-spacing: 0.02em;
 }
 .address a:hover {
-  color: var(--accent-color-iris);
+  color: var(--button-color-filters);
 }
 
 .hero {
@@ -142,9 +150,8 @@ header .studio {
   border-radius: 4px;
   gap: 10px;
 }
-/*eroare github nu preia marimea butonului*/
+
 .button {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -156,8 +163,11 @@ header .studio {
   background-color: var(--button-color-filters);
 }
 
+.button:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
 .features h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -166,7 +176,6 @@ header .studio {
 }
 
 .features p {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -194,7 +203,6 @@ header .studio {
   justify-content: center;
   margin-bottom: 5%;
   display: flex;
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -232,7 +240,6 @@ header .studio {
   display: flex;
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -251,7 +258,6 @@ header .studio {
 }
 
 .card ul {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -260,7 +266,6 @@ header .studio {
 }
 
 .card p {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -270,7 +275,6 @@ header .studio {
 }
 
 .card h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -281,6 +285,11 @@ header .studio {
 
 .team-member {
   background-color: var(--primary-color);
+}
+
+.team-member:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 ul {
@@ -310,7 +319,6 @@ footer .web,
 footer .studio {
   text-transform: uppercase;
   width: 115px;
-  font-family: Raleway;
   font-weight: 800;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -334,9 +342,8 @@ footer .studio {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;

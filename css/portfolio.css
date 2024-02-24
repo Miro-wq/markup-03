@@ -6,10 +6,22 @@
   --button-color-filters: #404bbf;
   --accent-color-filters: #e7e9fc;
   --accent-color-cloud: #f4f4fd;
+  --green-new-color: #31d0aa;
+  --grey-new-color: #8e8f99;
+  --white-new-color: #fcfcfc;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+
+p,
+h3 {
+  font-family: var(--font-family);
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--primary-color);
   font-style: normal;
   letter-spacing: 0.02em;
@@ -37,7 +49,7 @@ header a {
 header .web,
 header .studio {
   text-transform: uppercase;
-  font-family: "Raleway";
+  font-family: var(--second-family);
   font-weight: 800;
   letter-spacing: 0.03em;
 }
@@ -47,9 +59,8 @@ header .studio {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -89,23 +100,17 @@ header .studio {
   margin-right: 156px;
 }
 
-.index {
-  width: 48px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
+.main-nav a:hover {
+  color: var(--button-color-filters);
 }
 
-.portfolio {
-  width: 66px;
-  height: 24px;
-  color: var(--accent-color-text);
-  font-weight: 500;
-}
-
+.index,
+.portfolio,
 .contacts {
-  width: 67px;
-  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
 }
@@ -117,14 +122,15 @@ header .studio {
 }
 
 .address a:hover {
-  color: var(--accent-color-iris);
+  color: var(--button-color-filters);
 }
 
 .filters ul {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  height: 168px;
 }
 
 .filters li,
@@ -133,23 +139,26 @@ header .studio {
 }
 
 .filters li button {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
-  padding: 8px 24px;
-  background-color: var(--accent-color-filters);
+  padding: 12px 24px;
+  background-color: var(--accent-color-cloud);
   color: var(--accent-color-iris);
   cursor: pointer;
-  border: none;
+  border: 1px solid var(--accent-color-filters);
 }
 
 .filters li button:hover {
   color: var(--primary-color);
   background-color: var(--accent-color-iris);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
 .filters li button:active {
@@ -161,7 +170,7 @@ ul {
   display: flex;
   text-decoration: none;
 }
-
+/* trebuie sa ne referim pe fiecare element in parte, nu ca intreg*/
 .row-1 ul,
 .row-2 ul,
 .row-3 ul {
@@ -174,10 +183,9 @@ ul {
 .row-1 h3,
 .row-2 h3,
 .row-3 h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 120%;
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-text);
@@ -187,10 +195,9 @@ ul {
 .row-1 p,
 .row-2 p,
 .row-3 p {
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 150%;
   letter-spacing: 0.02em;
   text-align: left;
   color: var(--accent-color-description);
@@ -208,15 +215,15 @@ ul {
 .card9 {
   width: 360px;
   height: 420px;
-  border: 1px solid #e7e9fc;
-  padding: 0 0 32px 0;
+  border: 1px solid var(--accent-color-filters);
   text-align: center;
   margin-top: 45px;
 }
 
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  height: 312px;
 }
 
 footer p {
@@ -237,7 +244,6 @@ footer .web,
 footer .studio {
   text-transform: uppercase;
   width: 115px;
-  font-family: Raleway;
   font-weight: 800;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -261,9 +267,8 @@ footer .studio {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
