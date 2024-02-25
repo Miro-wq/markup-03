@@ -133,14 +133,14 @@ header .studio {
   letter-spacing: 0.02em;
   text-align: center;
   background-color: var(--accent-color-text);
-  color: #ffffff;
+  color: var(--primary-color);
   padding: 100px 0;
 }
 
 .hero button {
   background-color: var(--accent-color-iris);
   cursor: pointer;
-  color: #fefefe;
+  color: var(--primary-color);
   border: none;
   border-radius: 4px;
   width: 169px;
@@ -157,14 +157,15 @@ header .studio {
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-.button:active {
+.hero button:hover {
   background-color: var(--button-color-filters);
 }
 
-.button:hover {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+.hero button:active {
+  background-color: var(--accent-color-iris);
 }
 
 .features h3 {
@@ -299,6 +300,8 @@ ul {
 footer {
   background-color: var(--accent-color-text);
   padding: 50px 0;
+  width: 1440px;
+  height: 312px;
 }
 
 footer p {
