@@ -63,13 +63,12 @@ h3 {
 .id-container {
   width: 1200px;
   height: 732px;
-  margin-top: 120px;
 }
 
 .last-container {
   width: 1200px;
   height: 312px;
-  margin-top: 0px;
+  margin: 0 auto;
 }
 
 body {
@@ -104,7 +103,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
 }
 
 .web {
@@ -119,20 +117,16 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-left: 76px;
 }
 
 .main-nav ul {
   list-style: none;
-  margin-left: 76px;
 }
 
 .main-nav ul li {
-  margin-right: 40px;
+  padding-right: 40px;
 }
-
-/* .main-nav ul li:last-child {
-  margin-right: 156px;
-} */
 
 .main-nav a:hover {
   color: var(--button-color-filters);
@@ -146,10 +140,11 @@ body {
   font-weight: 500;
 }
 
-.address a {
+.address ul li a {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
+  padding-left: 40px;
 }
 
 .address a:hover {
@@ -260,7 +255,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
-  gap: 24px;
+  gap: 59px;
 }
 
 .about {
@@ -298,7 +293,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   border-radius: 0px 0px 4px 4px;
-  gap: 24px;
+  gap: 47px;
   padding-top: 72px;
 }
 
@@ -343,9 +338,6 @@ ul {
 
 footer {
   background-color: var(--accent-color-text);
-  padding: 50px 0;
-  padding: 50px o;
-  overflow: hidden;
 }
 
 footer p {
@@ -355,7 +347,6 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  margin-left: 156px;
 }
 
 footer a {
@@ -403,6 +394,5 @@ footer .studio {
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
