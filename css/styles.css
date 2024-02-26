@@ -32,66 +32,65 @@ h3 {
   font-family: var(--font-family);
 }
 
-.global-header {
-  /* display: flex; */
-}
-
 .header-container {
-  width: 1200px;
+  max-width: 1200px;
   height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-container {
-  width: 1200px;
-  height: 600px;
+  max-width: 1200px;
+  height: 310px; /* adaptat la dispalyul meu 1920x1080 110 zoom */
+  margin-left: 156px;
+  margin-right: 156px;
+  margin-top: 0px;
 }
 
 .description-container {
-  width: 1200px;
+  max-width: 1200px;
   height: 104px;
+  margin-top: 120px;
 }
 
 .pictures-container {
-  width: 1200px;
+  max-width: 1128px;
   height: 412px;
+  margin-left: 156px;
+  margin-top: 120px;
 }
 
 .id-container {
-  width: 1200px;
-  height: 732px;
+  max-width: 1200px;
+  height: 700px;
+  margin-top: 120px;
 }
+
 .last-container {
-  width: 1200px;
-  height: 312px;
+  max-width: 1200px;
+  height: 210px;
+  margin-top: 0px;
 }
 
 body {
   font-family: var(--font-family);
   background-color: var(--primary-color);
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .global-header {
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
   border-bottom: 1px solid #e7e9fc;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-header a {
+.global-header a {
   text-decoration: none;
-}
-
-header .web,
-header .studio {
-  text-transform: uppercase;
-  font-family: var(--second-family);
-  font-weight: 800;
-  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -103,7 +102,7 @@ header .studio {
   font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
   margin-left: 156px;
@@ -111,14 +110,10 @@ header .studio {
 
 .web {
   color: var(--accent-color-iris);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .studio {
   color: var(--accent-color-text);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .main-nav {
@@ -129,7 +124,7 @@ header .studio {
 
 .main-nav ul {
   list-style: none;
-  display: flex;
+  margin-left: 76px;
 }
 
 .main-nav ul li {
@@ -137,7 +132,7 @@ header .studio {
 }
 
 .main-nav ul li:last-child {
-  margin-right: 156px;
+  /* margin-right: 156px; */
 }
 
 .main-nav a:hover {
@@ -147,9 +142,6 @@ header .studio {
 .index,
 .portfolio,
 .contacts {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
@@ -160,15 +152,27 @@ header .studio {
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+
 .address a:hover {
   color: var(--button-color-filters);
 }
 
-.hero {
+.hero h1 {
   font-size: 56px;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0.02em;
+  margin-top: 188px;
+}
+
+.solutions {
+  box-sizing: content-box;
+  width: 496px;
+  height: 120px;
+  margin: auto;
+}
+
+.hero {
   text-align: center;
   background-color: var(--accent-color-text);
   color: var(--primary-color);
@@ -180,13 +184,10 @@ header .studio {
   cursor: pointer;
   color: var(--primary-color);
   border: none;
-  border-radius: 4px;
   width: 169px;
   height: 56px;
-  top: 428px;
-  left: 636px;
   border-radius: 4px;
-  gap: 10px;
+  margin-top: 48px;
 }
 
 .button {
@@ -206,7 +207,7 @@ header .studio {
   background-color: var(--accent-color-iris);
 }
 
-.features h3 {
+.one h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -214,7 +215,7 @@ header .studio {
   text-align: left;
 }
 
-.features p {
+.one p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -223,34 +224,43 @@ header .studio {
   color: var(--accent-color-description);
 }
 
-.features {
+.one {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  gap: 24px;
 }
 
 .feature {
   list-style: none;
   justify-content: center;
-  width: 18%;
+  width: 100%;
+}
+
+.strategy,
+.punctuality,
+.diligence,
+.tehnologies {
+  box-sizing: content-box;
+  width: 264px;
+  height: 104px;
+  margin-top: 8px;
+  margin-left: ;
 }
 
 .what-are {
   justify-content: center;
-  margin-bottom: 5%;
+  margin-bottom: 72px;
   display: flex;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 111%;
+  text-transform: capitalize;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
 }
 
-.images {
+.about ul.images {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -259,16 +269,12 @@ header .studio {
 
 .card {
   background-color: var(--accent-color-cloud);
-  padding: 100px 0;
-  margin-top: 5%;
+  padding-left: 118px;
 }
 
-.card team-member1,
-.card team-member2,
-.card team-member3,
-.card team-member4 {
-  width: 360px;
-  height: 420px;
+.team-member {
+  width: 264px;
+  height: 380px;
   border: 1px solid var(--accent-color-filters);
   padding: 0 0 32px 0;
   text-align: center;
@@ -277,14 +283,13 @@ header .studio {
 .our-team {
   justify-content: center;
   display: flex;
-  margin-top: 5%;
-  margin-bottom: 5%;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
+  text-transform: capitalize;
+  padding-top: 120px;
 }
 
 .team {
@@ -294,6 +299,7 @@ header .studio {
   padding: 0px 0px 32px 0px;
   border-radius: 0px 0px 4px 4px;
   gap: 24px;
+  padding-top: 70px;
 }
 
 .card ul {
@@ -320,6 +326,7 @@ header .studio {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--accent-color-text);
+  margin-top: 32px;
 }
 
 .team-member {
@@ -338,8 +345,8 @@ ul {
 footer {
   background-color: var(--accent-color-text);
   padding: 50px 0;
-  width: 1440px;
-  height: 312px;
+  padding: 50px o;
+  overflow: hidden;
 }
 
 footer p {
@@ -354,6 +361,13 @@ footer p {
 
 footer a {
   text-decoration: none;
+}
+
+.increase {
+  box-sizing: content-box;
+  width: 264px;
+  height: 72px;
+  padding-top: 16px;
 }
 
 footer .web,
@@ -391,4 +405,5 @@ footer .studio {
   letter-spacing: 0.03em;
   text-align: left;
   margin-left: 156px;
+  padding-top: 50px;
 }
