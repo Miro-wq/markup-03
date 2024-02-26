@@ -248,8 +248,25 @@ footer p {
   margin-left: 156px;
 }
 
+footer p {
+  color: var(--accent-color-cloud);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 156px;
+}
+
 footer a {
   text-decoration: none;
+}
+
+.increase {
+  box-sizing: content-box;
+  width: 264px;
+  height: 72px;
+  padding-top: 16px;
 }
 
 footer .web,
@@ -287,4 +304,5 @@ footer .studio {
   letter-spacing: 0.03em;
   text-align: left;
   margin-left: 156px;
+  padding-top: 50px;
 }
