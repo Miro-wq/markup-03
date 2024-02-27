@@ -37,28 +37,36 @@ h3 {
   margin: 0 auto;
 }
 
-.navigation {
-  width: 586px;
-  height: 48px;
-  /* display: flex; */
-  /* justify-content: center; */
-  margin-top: 96px;
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+.navigation-container {
+  margin-top: 150px;
+  flex-direction: column;
 }
 
-.first-line {
+.navigation-container ul {
+  gap: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+}
+
+.first-line-container {
   width: 1200px;
   height: 420px;
   margin-top: 72px;
-
 }
 
-.second-line {
+.second-line-container {
   width: 1200px;
   height: 420px;
   margin-top: 48px;
 }
 
-.third-line {
+.third-line-container {
   width: 1200px;
   height: 420px;
   margin-top: 48px;
@@ -151,24 +159,6 @@ body {
   color: var(--button-color-filters);
 }
 
-
-
-/* mai trebuie sters de aici in jos */
-
-
-.filters ul {
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  /* padding: 12px 24px; */
-  height: 168px;
-}
-
-.filters li,
-.filters button {
-  margin: 0;
-}
-
 .filters li button {
   font-family: var(--font-family);
   font-size: 16px;
@@ -177,7 +167,7 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
-  /* padding: 12px 24px; */
+  padding: 12px 24px;
   background-color: var(--accent-color-cloud);
   color: var(--accent-color-iris);
   cursor: pointer;
@@ -201,14 +191,20 @@ ul {
   display: flex;
   text-decoration: none;
 }
-/* trebuie sa ne referim pe fiecare element in parte, nu ca intreg*/
+
+.row-1,
+.row-2,
+.row-3 {
+  display: flex;
+  justify-content: center;
+}
+
 .row-1 ul,
 .row-2 ul,
 .row-3 ul {
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 5%;
+  gap: 60px;
 }
 
 .row-1 h3,
@@ -250,18 +246,6 @@ ul {
   text-align: center;
   margin-top: 45px;
 }
-
-/* .card1:hover,
-.card2:hover,
-.card3:hover,
-.card4:hover,
-.card5:hover,
-.card6:hover,
-.card7:hover,
-.card8:hover,
-.card9:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-} */
 
 footer {
   background-color: var(--accent-color-text);
