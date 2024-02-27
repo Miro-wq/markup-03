@@ -15,43 +15,64 @@
   --second-family: "Raleway", sans-serif;
 }
 
+body,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 p,
 h3 {
   font-family: var(--font-family);
 }
 
+.header-container {
+  width: 1200px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navigation {
+  width: 586px;
+  height: 48px;
+  display: flex;
+}
+
+.first-line {
+  width: ;
+}
+
+.second-line {
+  width: ;
+}
+
+.third-line {
+  width: ;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--primary-color);
-  font-style: normal;
   letter-spacing: 0.02em;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 100%;
-  min-height: 100vh;
 }
 
-header {
+.global-header {
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 64px;
-  text-align: left;
-  /* align-items: center; */
   border-bottom: 1px solid #e7e9fc;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-header a {
+.global-header a {
   text-decoration: none;
-}
-
-header .web,
-header .studio {
-  text-transform: uppercase;
-  font-family: var(--second-family);
-  font-weight: 800;
-  letter-spacing: 0.03em;
 }
 
 .logo {
@@ -63,41 +84,32 @@ header .studio {
   font-family: var(--second-family);
   font-size: 18px;
   font-weight: 800;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
 }
 
 .web {
   color: var(--accent-color-iris);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .studio {
   color: var(--accent-color-text);
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-left: 76px;
 }
 
 .main-nav ul {
   list-style: none;
-  display: flex;
 }
 
 .main-nav ul li {
-  margin-right: 40px;
-}
-
-.main-nav ul li:last-child {
-  margin-right: 156px;
+  padding-left: 40px;
 }
 
 .main-nav a:hover {
@@ -107,23 +119,26 @@ header .studio {
 .index,
 .portfolio,
 .contacts {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--accent-color-text);
   font-weight: 500;
 }
 
-.address a {
+.address ul li a {
   color: var(--accent-color-description);
   font-weight: 400;
   letter-spacing: 0.02em;
+  /* padding-left: 40px; */
 }
 
 .address a:hover {
   color: var(--button-color-filters);
 }
+
+
+
+/* mai trebuie sters de aici in jos */
+
 
 .filters ul {
   justify-content: center;
@@ -236,16 +251,6 @@ footer {
   background-color: var(--accent-color-text);
   /* padding: 50px 0; */
   height: 312px;
-}
-
-footer p {
-  color: var(--accent-color-cloud);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-left: 156px;
 }
 
 footer p {
