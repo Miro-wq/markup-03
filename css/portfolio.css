@@ -40,19 +40,35 @@ h3 {
 .navigation {
   width: 586px;
   height: 48px;
-  display: flex;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-top: 96px;
 }
 
 .first-line {
-  width: ;
+  width: 1200px;
+  height: 420px;
+  margin-top: 72px;
+
 }
 
 .second-line {
-  width: ;
+  width: 1200px;
+  height: 420px;
+  margin-top: 48px;
 }
 
 .third-line {
-  width: ;
+  width: 1200px;
+  height: 420px;
+  margin-top: 48px;
+  margin-bottom: 120px;
+}
+
+.last-container {
+  width: 1200px;
+  height: 312px;
+  margin: 0 auto;
 }
 
 body {
@@ -144,7 +160,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   height: 168px;
 }
 
@@ -161,7 +177,7 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   border-radius: 4px;
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   background-color: var(--accent-color-cloud);
   color: var(--accent-color-iris);
   cursor: pointer;
@@ -249,8 +265,6 @@ ul {
 
 footer {
   background-color: var(--accent-color-text);
-  /* padding: 50px 0; */
-  height: 312px;
 }
 
 footer p {
@@ -260,7 +274,6 @@ footer p {
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
-  margin-left: 156px;
 }
 
 footer a {
@@ -308,6 +321,5 @@ footer .studio {
   line-height: 21px;
   letter-spacing: 0.03em;
   text-align: left;
-  margin-left: 156px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
