@@ -13,9 +13,6 @@ Converting a Figma design into a functional website taught me to interpret desig
 - Additional browser support
 
 - Adding more integrations
-
-
-## License
-
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+  
+## 🛠 Tools
+[![My Skills](https://skillicons.dev/icons?i=html,css,)](https://skillicons.dev)
