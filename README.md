@@ -1,6 +1,20 @@
-# Tema #3 GoIT
+# Project Title
 
-Realizare HTML si CSS WebStudio Figma
+This is a homework project for the Full Stack Developer course, focused on creating a static web page. The project involves replicating the WebStudio page design provided in Figma.
 
-## Link către Pagina Live
-[Webstudio Tema 3](https://miro-wq.github.io/goit-markup-hw-03/)
+## Badges
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Lessons Learned
+
+Converting a Figma design into a functional website taught me to interpret design specifications accurately. I now understand how to extract assets, measure distances, and translate visual designs into code.
+
+
+## Roadmap
+
+- Additional browser support
+
+- Add more integrations
